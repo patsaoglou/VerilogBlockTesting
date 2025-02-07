@@ -12,7 +12,7 @@ loop:
 8   bnz r3, 10        // If r3 != 0, n is odd
 
 even_case:
-8    lsl r0, r0, r4   // r0 = r0 / 2 (n is even)
+8    lsr r0, r0, r4   // r0 = r0 / 2 (n is even)
 9    bnz r2, 3        // Branch back to the loop unconditionally
 
 odd_case:
